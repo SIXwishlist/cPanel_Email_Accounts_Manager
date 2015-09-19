@@ -1,0 +1,200 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+#adminbar {
+    position: absolute;
+    top: 0px;
+    text-align: right;
+    width: 100%;
+    right: 0px;
+    background-color: #AAA;
+    padding: 10px 40px 10px 10px;
+}
+
+#formulario {
+    top: 70px;
+    position: relative;
+}
+
+form#mainform {
+    margin: 20px 0px 0px 26%;
+}
+/* zocial */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  text-align:center;
+}
+
+
+h2 {
+  color:rgba(255,255,255,.8);
+  margin-left:12px;
+}
+
+body {
+  background: #272125;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+form {
+  position:relative;
+  margin: 50px auto;
+  width: 380px;
+  height: auto;
+}
+
+input {
+  padding: 16px;
+  border-radius:7px;
+  border:0px;
+  background: rgba(255,255,255,.2);
+  display: block;
+  margin: 15px;
+  width: 300px;  
+  color:white;
+  font-size:18px;
+  height: 54px;
+}
+
+input:focus {
+  outline-color: rgba(0,0,0,0);
+  background: rgba(255,255,255,.95);
+  color: #e74c3c;
+}
+
+button {
+  float:right;
+  height: 121px;
+  width: 50px;
+  border: 0px;
+  background: #e74c3c;
+  border-radius:7px;
+  padding: 10px;
+  color:white;
+  font-size:22px;
+}
+
+.inputUserIcon {
+  position:absolute;
+  top:126px;
+  right: 80px;
+  color:white;
+}
+
+.inputPassIcon {
+  position:absolute;
+  top:192px;
+  right: 80px;
+  color:white;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #e74c3c;
+}
+
+.table a:link {
+	color: #FFF;
+	font-weight: bold;
+	text-decoration:none;
+}
+.table a:visited {
+	color: #FFFFFF;
+	font-weight:bold;
+	text-decoration:none;
+}
+.table a:active,
+.table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+.table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	background: #7F7F7F;
+	margin:20px;
+	border:#ccc 1px solid;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+.table th {
+	padding:21px 25px 22px 25px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+	color: black;
+}
+.table th:first-child {
+	text-align: left;
+	padding-left:20px;
+}
+.table tr:first-child th:first-child {
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}
+.table tr:first-child th:last-child {
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+}
+.table tr {
+	text-align: center;
+	padding-left:20px;
+}
+.table td:first-child {
+	text-align: left;
+	padding-left:20px;
+	border-left: 0;
+}
+.table td {
+	padding:18px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	background: #909090;
+	background: -webkit-gradient(linear, left top, left bottom, from(#909090), to(#5A5A5A));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+}
+.table tr.even td {
+	background: #f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+}
+.table tr:last-child td {
+	border-bottom:0;
+}
+table tr:last-child td:first-child {
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.table tr:last-child td:last-child {
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+table tr:hover td {
+	background: rgba(242, 242, 242, 0.24);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 242, 242, 0.08)), to(rgba(240, 240, 240, 0.32)));
+    background: -moz-linear-gradient(top, rgba(242, 242, 242, 0.08), rgba(240, 240, 240, 0.32));
+}

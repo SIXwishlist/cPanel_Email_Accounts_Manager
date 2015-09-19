@@ -39,7 +39,7 @@ function step_1(){
    }
    }
    }
-   @mysql_query("INSERT INTO usuarios SET usuario='".$admin_name."', password = md5('" . $admin_password . "',nivel='1')");
+   @mysql_query("INSERT INTO usuarios SET usuario='".$admin_name."', password = '" . md5($admin_password) . "',nivel='1'");
    mysql_close($connection);
    }
    $database_inf="<?php

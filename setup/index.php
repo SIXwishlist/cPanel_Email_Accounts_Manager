@@ -9,7 +9,7 @@
 <html>
 <head>
 <title>Installation Script</title>
-<scritp>
+<script type="text/javascript">
     window.setTimeout(function(){
 
         // Move to a new location or you can do something else
@@ -21,6 +21,6 @@
 <body>
 
   <p>Instalaci&oacute;n completa.</p>
-  <p>Será redirigido a la instalación del cliente webmail en unos instantes.</p>
+  <p>Ser&aacute; redirigido a la instalaci&oacute;n del cliente webmail en unos instantes.</p>
 </body>
 </html>

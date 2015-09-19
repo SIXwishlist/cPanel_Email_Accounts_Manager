@@ -209,10 +209,20 @@ function showstrength(str,strid) {
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             	resp = xmlhttp.responseText;
-            	resp = resp.replace('{','');
-            	resp = resp.replace('}','');
-            	
+            	seguridad =resp;
+            	resp = "Seguridad : " + resp + "%";
                 document.getElementById(strid).innerHTML = resp ;
+                if (seguridad < 20){
+                    document.getElementById(strid).style.background = "#FF0000";
+                }else if(seguridad <40){
+                document.getElementById(strid).style.background = "#FF9837";
+                }else if(seguridad <60){
+                document.getElementById(strid).style.background = "#F1FF4D";
+                }else if(seguridad <80){
+                document.getElementById(strid).style.background = "#C5FF00";
+                }else if(seguridad <= 100){
+                document.getElementById(strid).style.background = "#8FFF00";
+                }
             }
         }
         xmlhttp.open("GET", "strength.php?q=" + str, true);

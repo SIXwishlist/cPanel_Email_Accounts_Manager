@@ -20,8 +20,8 @@ $f = curl_exec($ch);
 curl_close($ch);
 $f = str_replace("{", "", $f);
 $f = str_replace("}", "", $f);
-//$f = str_replace("strength","",$f);
+$f = str_replace("strength","",$f);
 $f = str_replace("\"","",$f);
-//$f = str_replace(":","",$f);
+$f = str_replace(":","",$f);
 echo $f;
 ?>

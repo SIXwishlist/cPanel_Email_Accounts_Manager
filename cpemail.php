@@ -199,6 +199,27 @@ function generatePassword()
     $('#password').keydown()
 }
 </script>
+<script type="text/javascript">
+function showstrength(str,strid) {
+    if (str.length == 0) { 
+        document.getElementById(strid).innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            	resp = xmlhttp.responseText;
+            	resp = resp.replace('{','');
+            	resp = resp.replace('}','');
+            	
+                document.getElementById(strid).innerHTML = resp ;
+            }
+        }
+        xmlhttp.open("GET", "strength.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+</script>
 </head>
 <body>
 <?php echo '<div style="color:red">'.$msg.'</div>'; ?>
@@ -249,7 +270,7 @@ while($row = mysqli_fetch_array($result))
   {
 
   echo "<td><a href='mailto:" . trim($row['usuario']) . "@".$cpdomain."'> " . trim($row['usuario']) . "@".$cpdomain."</a></td>";
-  echo "<td><form name='cpass' method='post' action='cpass.php'><input type='hidden' name='correo' value=".$row['usuario']." /><input type='text' name='newpass' placeholder='Nueva Contrase&ntilde;a' /><button type='submit' class='btn btn-success' style='height: initial;position: relative;top: -62px;'><i class='fa fa-check-square'></i></button></form></td>";
+  echo "<td><form style='margin:0px' name='cpass' method='post' action='cpass.php'><input type='hidden' name='correo' value=".$row['usuario']." /><input type='text' name='newpass' placeholder='Nueva Contrase&ntilde;a' onkeyup='showstrength(this.value,\"".$row['usuario']."\");' /><button type='submit' class='btn btn-success' style='height: initial;position: relative;top: -62px;'><i class='fa fa-check-square'></i></button></form><a id='" . trim($row['usuario']) . "'></a></td>";
   echo "<td><form style='width: 50px; margin: 0px 0px 0px 19px;' name='rmemail' method='post' action='remove.php'><input type='hidden' name='correo' value=".$row['usuario']." /><button type='submit' class='btn btn-success' style='height: initial;position: relative;left: -35px;'><i class='fa fa-close'></i></button></form></td></tr>";
 
 }

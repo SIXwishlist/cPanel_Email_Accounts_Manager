@@ -248,9 +248,9 @@ echo "<table class='table' id='maillist'  style='text-align: center;margin: 20px
 while($row = mysqli_fetch_array($result))
   {
 
-  echo "<td><a href='mailto:" . trim($row['correo']) . "@".$cpdomain."'> " . trim($row['usuario']) . "@".$cpdomain."</a></td>";
-  echo "<td><form name='cpass' method='post' action='cpass.php'><input type='hidden' name='correo' value=".$row['correo']." /><input type='text' name='newpass' placeholder='Nueva Contrase&ntilde;a' /><button type='submit' class='btn btn-success' style='height: initial;position: relative;top: -62px;'><i class='fa fa-check-square'></i></button></form></td>";
-  echo "<td><form style='width: 50px; margin: 0px 0px 0px 19px;' name='rmemail' method='post' action='remove.php'><input type='hidden' name='correo' value=".$row['correo']." /><button type='submit' class='btn btn-success' style='height: initial;position: relative;left: -35px;'><i class='fa fa-close'></i></button></form></td></tr>";
+  echo "<td><a href='mailto:" . trim($row['usuario']) . "@".$cpdomain."'> " . trim($row['usuario']) . "@".$cpdomain."</a></td>";
+  echo "<td><form name='cpass' method='post' action='cpass.php'><input type='hidden' name='correo' value=".$row['usuario']." /><input type='text' name='newpass' placeholder='Nueva Contrase&ntilde;a' /><button type='submit' class='btn btn-success' style='height: initial;position: relative;top: -62px;'><i class='fa fa-check-square'></i></button></form></td>";
+  echo "<td><form style='width: 50px; margin: 0px 0px 0px 19px;' name='rmemail' method='post' action='remove.php'><input type='hidden' name='correo' value=".$row['usuario']." /><button type='submit' class='btn btn-success' style='height: initial;position: relative;left: -35px;'><i class='fa fa-close'></i></button></form></td></tr>";
 
 }
   }

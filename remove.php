@@ -35,7 +35,7 @@ if (!$con)
   }
 mysqli_select_db($con,BASE_DATOS);
 
-$sql="DELETE FROM correos WHERE correo = '".$email."' ";
+$sql="DELETE FROM usuarios WHERE usuario = '".$email."' ";
 
 $result = mysqli_query($con,$sql);
 header('Location: cpemail.php');

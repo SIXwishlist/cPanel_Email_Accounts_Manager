@@ -25,9 +25,18 @@ And it will allow the users:
 
 <h3>Demo</h3>
 http://cristobalaguila.com/email/login.php
+<ul><li>Admin</li>
 <ul>
 <li>User: demo</li>
 <li>Pass: demo</li>
+</ul></ul>
+<ul>
+<li>User</li>
+<ul>
+<li>User: demo_user</li>
+<li>Pass: Ru4zgs8FpYUj</li>
 </ul>
+</ul>
+
 
 

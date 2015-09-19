@@ -23,5 +23,11 @@ And it will allow the users:
 <li>Change alternative email (for password recovery)</li>
 </ul></ul>
 
+<h3>Demo</h3>
+http://cristobalaguila.com/email/login.php
+<ul>
+<li>User: demo</li>
+<li>Pass: demo</li>
+</ul>
 
 
